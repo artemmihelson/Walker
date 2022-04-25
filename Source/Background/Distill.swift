@@ -16,7 +16,7 @@ class Distill {
     let animation = CAKeyframeAnimation(keyPath: property.rawValue)
     animation.duration = duration
     animation.isRemovedOnCompletion = false
-    animation.fillMode = kCAFillModeForwards
+    animation.fillMode = CAMediaTimingFillMode.forwards
     animation.isAdditive = false
     animation.isCumulative = false
     animation.timingFunction = CAMediaTimingFunction(controlPoints:
@@ -39,7 +39,7 @@ class Distill {
   static func spring(_ property: Animation.Property, type: Animation.Spring) -> CAKeyframeAnimation {
     let animation = CAKeyframeAnimation(keyPath: property.rawValue)
     animation.isRemovedOnCompletion = false
-    animation.fillMode = kCAFillModeForwards
+    animation.fillMode = CAMediaTimingFillMode.forwards
 
     return animation
   }

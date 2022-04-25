@@ -135,7 +135,7 @@ extension Distillery: CAAnimationDelegate {
       final()
     }
 
-    if let index = distilleries.index(of: self) , ingredients.isEmpty {
+    if let index = distilleries.firstIndex(of: self) , ingredients.isEmpty {
       distilleries.remove(at: index)
     }
   }
