@@ -11,4 +11,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files = 'Source/**/*'
   s.frameworks = 'AVFoundation'
+  s.swift_versions = '5.0'
 end
